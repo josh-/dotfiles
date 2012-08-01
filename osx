@@ -1,0 +1,183 @@
+# My very minimal use of Mathias Bynens OS X defaults, with a couple of my own added
+# http://mths.be/osx
+
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
+
+# Menu bar: show remaining battery time (on pre-10.8); hide percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+defaults write com.apple.menuextra.battery ShowTime -string "YES"
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+
+# Disable the “Are you sure you want to open this application?” dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+###############################################################################
+# Trackpad, mouse, keyboard, and input                                        #
+###############################################################################
+
+# Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# Trackpad: swipe between pages with three fingers
+defaults write NSGlobalDomain AppleEnableSwipeNavigateWithScrolls -bool true
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerHorizSwipeGesture -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 1
+
+# Enable full keyboard access for all controls
+# (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+###############################################################################
+# Screen                                                                      #
+###############################################################################
+
+# Enable subpixel font rendering on non-Apple LCDs
+defaults write NSGlobalDomain AppleFontSmoothing -int 2
+
+###############################################################################
+# Finder                                                                      #
+###############################################################################
+
+# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
+defaults write com.apple.finder QuitMenuItem -bool true
+
+# Finder: show hidden files by default
+defaults write com.apple.Finder AppleShowAllFiles -bool true
+
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Finder: allow text selection in Quick Look
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Automatically open a new Finder window when a volume is mounted
+defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+
+# Enable snap-to-grid for icons on the desktop and in other icon views
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+
+# Increase grid spacing for icons on the desktop and in other icon views
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
+
+# Increase the size of icons on the desktop and in other icon views
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
+
+# Disable the warning before emptying the Trash
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
+###############################################################################
+# Dock & hot corners                                                          #
+###############################################################################
+
+# Set the icon size of Dock items to 30 pixels
+defaults write com.apple.dock tilesize -int 30
+
+# Don’t show Dashboard as a Space
+defaults write com.apple.dock "dashboard-in-overlay" -bool true
+
+# Position Dock on right of screen
+defaults write com.apple.dock orientation -string right
+
+# Remove the auto-hiding Dock delay
+defaults write com.apple.Dock autohide-delay -float 0
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Make Dock icons of hidden applications translucent
+defaults write com.apple.dock showhidden -bool true
+
+# Hot corners
+# Bottom right screen corner → Put Display to Sleep
+defaults write com.apple.dock wvous-br-corner -int 10
+defaults write com.apple.dock wvous-br-modifier -int 0
+
+###############################################################################
+# Safari & WebKit                                                             #
+###############################################################################
+
+# Hide Safari’s bookmarks bar by default
+defaults write com.apple.Safari ShowFavoritesBar -bool false
+
+# Disable Safari’s thumbnail cache for History and Top Sites
+defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
+
+# Enable Safari’s debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+# Remove useless icons from Safari’s bookmarks bar
+defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+
+# Enable the Develop menu and the Web Inspector in Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+
+# Add a context menu item for showing the Web Inspector in web views
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+###############################################################################
+# iTunes, Mail, and Disk Utility                                              #
+###############################################################################
+
+# Disable the Ping sidebar in iTunes
+defaults write com.apple.iTunes disablePingSidebar -bool true
+
+# Disable all the other Ping stuff in iTunes
+defaults write com.apple.iTunes disablePing -bool true
+
+# Disable send and reply animations in Mail.app
+defaults write com.apple.Mail DisableReplyAnimations -bool true
+defaults write com.apple.Mail DisableSendAnimations -bool true
+
+# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+# Enable the debug menu in Disk Utility
+defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
+
+###############################################################################
+# Terminal                                                                    #
+###############################################################################
+
+# Enable “focus follows mouse” for Terminal.app and all X11 apps
+# This means you can hover over a window and start typing in it without clicking first
+defaults write com.apple.terminal FocusFollowsMouse -bool true
+
+###############################################################################
+# Kill affected applications                                                  #
+###############################################################################
+
+for app in Finder Dock Mail Safari iTunes SystemUIServer; do
+	killall "$app" > /dev/null 2>&1
+done
+echo "Done. Note that some of these changes require a logout/restart to take effect."
