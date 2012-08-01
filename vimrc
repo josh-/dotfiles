@@ -18,6 +18,12 @@ set directory=~/.vim-temp
 " exit to normal mode with 'jj'
 :imap jj <Esc>
 
+" make j/k move to next visual line instead of physical line
+nnoremap k gk
+nnoremap j gj
+nnoremap gk k
+nnoremap gj j
+
 " insert new line without entering insert mode
 map <S-Enter> O<Esc>
 map <CR> o<Esc>
