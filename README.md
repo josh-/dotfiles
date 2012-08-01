@@ -6,7 +6,7 @@ Based off [Ryan Bates's](https://github.com/ryanb/dotfiles) dotfiles, but (almos
 
 Clone the repository and run the `rake install` task. It will prompt you before doing anything destructive.
 
-    git clone git://github.com/josh-/dotfiles ~/.dotfiles
+    git clone --recursive git://github.com/josh-/dotfiles ~/.dotfiles
     cd ~/.dotfiles
     rake install
 
