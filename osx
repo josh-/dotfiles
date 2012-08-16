@@ -174,10 +174,17 @@ defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.terminal FocusFollowsMouse -bool true
 
 ###############################################################################
+# Quicktime X                                                                 #
+###############################################################################
+
+# Enable autoplay
+defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen 1
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in Finder Dock Mail Safari iTunes SystemUIServer; do
+for app in Finder Dock Mail Safari iTunes SystemUIServer "QuickTime Player"; do
 	killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
