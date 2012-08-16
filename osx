@@ -166,14 +166,6 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 
 ###############################################################################
-# Terminal                                                                    #
-###############################################################################
-
-# Enable “focus follows mouse” for Terminal.app and all X11 apps
-# This means you can hover over a window and start typing in it without clicking first
-defaults write com.apple.terminal FocusFollowsMouse -bool true
-
-###############################################################################
 # Quicktime X                                                                 #
 ###############################################################################
 
