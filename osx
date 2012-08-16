@@ -5,9 +5,8 @@
 # General UI/UX                                                               #
 ###############################################################################
 
-# Menu bar: show remaining battery time (on pre-10.8); hide percentage
-defaults write com.apple.menuextra.battery ShowPercent -string "NO"
-defaults write com.apple.menuextra.battery ShowTime -string "YES"
+# Menu bar: show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
