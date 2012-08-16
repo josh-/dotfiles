@@ -147,6 +147,9 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+# Prevent Safari from opening "safe" files automatically after downloading
+defaults write com.apple.Safari AutoOpenSafeDownloads -boolean false
+
 ###############################################################################
 # iTunes, Mail, and Disk Utility                                              #
 ###############################################################################
