@@ -23,6 +23,9 @@ set directory=~/.vim-temp
 " sane leader key
 let mapleader=","
 
+" NERDTree
+nnoremap <Leader>t :NERDTreeToggle<Cr>
+
 " get to the command bar easily in insert mode
 :imap ::: <Esc>:
 :imap /// <Esc>/
