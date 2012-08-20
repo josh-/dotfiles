@@ -15,8 +15,10 @@ colorscheme zellner
 set backupdir=~/.vim-temp
 set directory=~/.vim-temp
 
-" exit to normal mode with 'jj'
+" make exiting to normal mode a bit easier
 :imap jj <Esc>
+:imap kk <Esc>
+:imap jk <Esc>
 
 " make j/k move to next visual line instead of physical line
 nnoremap k gk
