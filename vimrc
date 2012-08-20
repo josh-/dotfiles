@@ -36,6 +36,10 @@ nnoremap j gj
 nnoremap gk k
 nnoremap gj j
 
+" easier jumping to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
 " insert new line without entering insert mode
 map <S-Enter> O<Esc>
 map <CR> o<Esc>
