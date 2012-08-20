@@ -20,6 +20,9 @@ set directory=~/.vim-temp
 :imap kk <Esc>
 :imap jk <Esc>
 
+" sane leader key
+let mapleader=","
+
 " get to the command bar easily in insert mode
 :imap ::: <Esc>:
 :imap /// <Esc>/
