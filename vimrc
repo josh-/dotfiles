@@ -20,6 +20,10 @@ set directory=~/.vim-temp
 :imap kk <Esc>
 :imap jk <Esc>
 
+" get to the command bar easily in insert mode
+:imap ::: <Esc>:
+:imap /// <Esc>/
+
 " make j/k move to next visual line instead of physical line
 nnoremap k gk
 nnoremap j gj
