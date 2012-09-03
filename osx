@@ -178,10 +178,17 @@ defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen 1
 
 ###############################################################################
+# MacVim                                                                      #
+###############################################################################
+
+# Always show hidden files
+defaults write org.vim.MacVim AppleShowAllFiles -bool true
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in Finder Dock Mail Safari iTunes SystemUIServer "QuickTime Player"; do
+for app in Finder Dock Mail Safari iTunes SystemUIServer "QuickTime Player" MacVim; do
 	killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
