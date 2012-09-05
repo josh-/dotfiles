@@ -44,6 +44,9 @@ nnoremap E $
 map <S-Enter> O<Esc>
 map <CR> o<Esc>
 
+" word count
+nnoremap <Leader>c ggVGg<C-G>``
+
 " tab
 set smartindent
 set tabstop=4
