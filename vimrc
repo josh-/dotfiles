@@ -89,3 +89,6 @@ set cmdheight=2
 
 " ignore case when searching
 set ignorecase
+
+" recognize .md files as markdown files
+au BufRead,BufNewFile *.md set filetype=markdown
