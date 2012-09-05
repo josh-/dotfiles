@@ -44,6 +44,9 @@ nnoremap E $
 map <S-Enter> O<Esc>
 map <CR> o<Esc>
 
+" jump to end of word and insert
+nnoremap W ea
+
 " word count
 nnoremap <Leader>c ggVGg<C-G>``
 
