@@ -47,6 +47,10 @@ map <CR> o<Esc>
 " jump to end of word and insert
 nnoremap W ea
 
+" easy spelling suggestion accepting and toggling spelling on/off
+nnoremap Z [s1z=`]
+nnoremap <Leader>s :setlocal spell! spelllang=en_us<CR>:
+
 " word count
 nnoremap <Leader>c ggVGg<C-G>``
 
