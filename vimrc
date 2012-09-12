@@ -26,10 +26,6 @@ let mapleader=","
 " NERDTree
 nnoremap <Leader>t :NERDTreeToggle<Cr>
 
-" get to the command bar easily in insert mode
-:imap ::: <Esc>:
-:imap /// <Esc>/
-
 " make j/k move to next visual line instead of physical line
 nnoremap k gk
 nnoremap j gj
