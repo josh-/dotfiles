@@ -8,7 +8,7 @@ ZSH_THEME="mnml"
 COMPLETION_WAITING_DOTS="true"
 
 # load plugins from ~/.oh-my-zsh/plugins/*
-plugins=(josh git osx zsh-history-substring-search terminalapp brew)
+plugins=(josh nanoc git osx zsh-history-substring-search terminalapp brew)
 
 source $ZSH/oh-my-zsh.sh
 
