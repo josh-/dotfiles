@@ -50,6 +50,9 @@ nnoremap <Leader>s :setlocal spell! spelllang=en_us<CR>
 " word count
 nnoremap <Leader>c ggVGg<C-G>``
 
+" marked.app
+:nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
+
 " tab
 set smartindent
 set tabstop=4
