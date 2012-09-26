@@ -30,3 +30,6 @@ alias v='vim'
 
 ## filesystem stuff
 alias cdir='pwd | pbcopy' #copy current directory to clipboard
+
+## DNS
+alias dns='sudo killall mDNSResponder'
