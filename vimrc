@@ -12,8 +12,12 @@ set title
 colorscheme zellner
 
 " set temporary & backup dirs
+silent !mkdir ~/.vim-temp > /dev/null 2>&1
 set backupdir=~/.vim-temp
 set directory=~/.vim-temp
+
+" effective buffer management
+set hidden
 
 " make exiting to normal mode a bit easier
 :imap jj <Esc>
@@ -23,6 +27,9 @@ set directory=~/.vim-temp
 " sane leader key
 let mapleader=","
 
+" scroll offset
+set scrolloff=3
+
 " NERDTree
 nnoremap <Leader>t :NERDTreeToggle<Cr>
 
@@ -31,10 +38,6 @@ nnoremap k gk
 nnoremap j gj
 nnoremap gk k
 nnoremap gj j
-
-" easier jumping to beginning/end of line
-nnoremap B ^
-nnoremap E $
 
 " insert new line without entering insert mode
 map <S-Enter> O<Esc>
@@ -48,7 +51,7 @@ nnoremap Z [s1z=`]
 nnoremap <Leader>s :setlocal spell! spelllang=en_us<CR>
 
 " word count
-nnoremap <Leader>c ggVGg<C-G>``
+nnoremap <Leader>c g<C-G>
 
 " marked.app
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
@@ -69,9 +72,9 @@ filetype indent on
 set autoread
 
 " bash like keys for the vim command line
-cnoremap <C-A>      <Home>
-cnoremap <C-E>      <End>
-cnoremap <C-K>      <C-U>
+cnoremap <C-A> <Home>
+cnoremap <C-E> <End>
+cnoremap <C-K> <C-U>
 
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
@@ -86,8 +89,11 @@ nnoremap - <C-x>
 " commandbar height
 set cmdheight=2
 
-" ignore case when searching
+" better searching
 set ignorecase
+set hlsearch
+set incsearch
+nmap <silent> <leader>n :silent :nohlsearch<CR>
 
 " recognize .md files as markdown files
 au BufRead,BufNewFile *.md set filetype=markdown
