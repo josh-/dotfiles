@@ -1,0 +1,39 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config windowHintsShowIcons true
+
+# Push Bindings
+bind right:cmd;ctrl;alt  push right bar-resize:screenSizeX/2
+bind left:cmd;ctrl;alt   push left  bar-resize:screenSizeX/2
+bind up:cmd;ctrl;alt     push up    bar-resize:screenSizeY/2
+bind down:cmd;ctrl;alt   push down  bar-resize:screenSizeY/2
+
+# Resize Bindings
+bind right:shift;ctrl     resize +10% +0
+bind left:shift;ctrl      resize -10% +0
+bind up:shift;ctrl        resize +0   -10%
+bind down:shift;ctrl      resize +0   +10%
+bind right:shift;ctrl;alt resize -10% +0 bottom-right
+bind left:shift;ctrl;alt  resize +10% +0 bottom-right
+bind up:shift;ctrl;alt    resize +0   +10% bottom-right
+bind down:shift;ctrl;alt  resize +0   -10% bottom-right
+
+# Nudge Bindings
+bind right:ctrl;alt nudge +10% +0
+bind left:ctrl;alt  nudge -10% +0
+bind up:ctrl;alt    nudge +0   -10%
+bind down:ctrl;alt  nudge +0   +10%
+
+# Window Hints
+bind esc:ctrl  hint
+
+# App Switcher
+bind tab:alt   switch
+
+# Grid
+bind g:ctrl    grid padding:5 0:6,2 1:8,3
+
+# Focus
+bind [:ctrl    focus left
+bind ]:ctrl    focus right
