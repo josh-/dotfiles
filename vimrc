@@ -56,6 +56,9 @@ nnoremap <Leader>c g<C-G>
 " marked.app
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
+" current word in system dictionary (copies word to d buffer)
+nnoremap <Leader>d "dyiw :silent !open dict://<C-R>d<Cr>
+
 " tab
 set smartindent
 set tabstop=4
