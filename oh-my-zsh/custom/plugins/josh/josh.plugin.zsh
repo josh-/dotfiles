@@ -20,6 +20,7 @@ compdef _desk desk
 alias gst='git status'
 alias gd='git diff'
 alias gcl='git clone'
+alias gundo='git reset --soft HEAD~1' # will undo the last commit
 
 ## homebrew
 alias bi='brew install'
