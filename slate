@@ -8,6 +8,7 @@ bind right:cmd;ctrl;alt  push right bar-resize:screenSizeX/2
 bind left:cmd;ctrl;alt   push left  bar-resize:screenSizeX/2
 bind up:cmd;ctrl;alt     push up    bar-resize:screenSizeY/2
 bind down:cmd;ctrl;alt   push down  bar-resize:screenSizeY/2
+bind up:shift;cmd;ctrl;alt   push down  bar-resize:screenSizeY
 
 # Resize Bindings
 bind right:shift;ctrl     resize +10% +0
@@ -32,7 +33,7 @@ bind esc:ctrl  hint
 bind tab:alt   switch
 
 # Grid
-bind g:ctrl    grid padding:5 0:6,2 1:8,3
+bind =:ctrl    grid padding:5 0:6,4 1:8,3
 
 # Focus
 bind [:ctrl    focus left
