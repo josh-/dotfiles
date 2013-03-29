@@ -8,6 +8,9 @@
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
+# Set sidebar icon size to Small
+defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
+
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
