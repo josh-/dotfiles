@@ -7,6 +7,9 @@ ZSH_THEME="mnml"
 # show completion dots
 COMPLETION_WAITING_DOTS="true"
 
+# disable update check
+DISABLE_AUTO_UPDATE="true"
+
 # load plugins from ~/.oh-my-zsh/plugins/*
 plugins=(josh nanoc git osx zsh-history-substring-search terminalapp brew)
 
