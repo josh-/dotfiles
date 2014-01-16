@@ -16,6 +16,8 @@ compdef _desk desk
 
 # aliases
 
+alias ql="qlmanage -p &>/dev/null"
+
 ## git
 alias gst='git status'
 alias gd='git diff'
@@ -34,3 +36,12 @@ alias cdir='pwd | pbcopy' #copy current directory to clipboard
 
 ## DNS
 alias dns='sudo killall mDNSResponder'
+
+# Select the current directory in launchbar, optionally a file
+lb () {
+	if [[ $# = 1 ]]; then
+		[[ -e "$(pwd)/$1" ]] && open "x-launchbar:select?file=$(pwd)/$1" || open "x-launchbar:select?file=$1"
+	else
+		open "x-launchbar:select?file=$(pwd)"
+	fi
+}
