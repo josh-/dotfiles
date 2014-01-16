@@ -10,6 +10,8 @@ bind up:cmd;ctrl;alt     push up    bar-resize:screenSizeY/2
 bind down:cmd;ctrl;alt   push down  bar-resize:screenSizeY/2
 bind up:shift;cmd;ctrl;alt   push down  bar-resize:screenSizeY
 
+bind /:ctrl chain corner top-left resize:screenSizeX/2;screenSizeY/2 | corner top-right resize:screenSizeX/2;screenSizeY/2 | corner bottom-left resize:screenSizeX/2;screenSizeY/2 | corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
 # Resize Bindings
 bind right:shift;ctrl     resize +10% +0
 bind left:shift;ctrl      resize -10% +0
@@ -21,10 +23,10 @@ bind up:shift;ctrl;alt    resize +0   +10% bottom-right
 bind down:shift;ctrl;alt  resize +0   -10% bottom-right
 
 # Nudge Bindings
-bind right:ctrl;alt nudge +10% +0
-bind left:ctrl;alt  nudge -10% +0
-bind up:ctrl;alt    nudge +0   -10%
-bind down:ctrl;alt  nudge +0   +10%
+bind right:ctrl;alt nudge +6% +0
+bind left:ctrl;alt  nudge -6% +0
+bind up:ctrl;alt    nudge +0   -6%
+bind down:ctrl;alt  nudge +0   +6%
 
 # Window Hints
 bind esc:ctrl  hint
