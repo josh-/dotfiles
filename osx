@@ -134,7 +134,7 @@ chflags nohidden ~/Library
 ###############################################################################
 
 # Set the icon size of Dock items to 30 pixels
-defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock tilesize -int 50
 
 # Don’t show Dashboard as a Space
 defaults write com.apple.dock "dashboard-in-overlay" -bool true
