@@ -207,6 +207,13 @@ defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen 1
 
 ###############################################################################
+# Messages                                                                    #
+###############################################################################
+
+# Disable emoji text substitution
+defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
+
+###############################################################################
 # Activity Monitor                                                            #
 ###############################################################################
 
