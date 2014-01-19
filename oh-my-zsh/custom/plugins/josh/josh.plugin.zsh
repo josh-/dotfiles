@@ -34,9 +34,6 @@ alias v='vim'
 ## filesystem stuff
 alias cdir='pwd | pbcopy' #copy current directory to clipboard
 
-## DNS
-alias dns='sudo killall mDNSResponder'
-
 # Select the current directory in launchbar, optionally a file
 lb () {
 	if [[ $# = 1 ]]; then
