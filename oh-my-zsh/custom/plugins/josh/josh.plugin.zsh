@@ -19,9 +19,7 @@ compdef _desk desk
 alias ql="qlmanage -p &>/dev/null"
 
 ## git
-alias gst='git status'
-alias gd='git diff'
-alias gcl='git clone'
+alias gclo='git clone'
 alias gundo='git reset --soft HEAD~1' # will undo the last commit
 
 ## homebrew
