@@ -37,6 +37,9 @@ defaults write ~/Library/Preferences/ByHost/com.apple.systemuiserver.* dontAutoL
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
+# Developer CrashReport dialog type
+defaults write com.apple.CrashReporter DialogType developer
+
 ###############################################################################
 # Trackpad, mouse, keyboard, and input                                        #
 ###############################################################################
