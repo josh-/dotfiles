@@ -21,6 +21,7 @@ alias ql="qlmanage -p &>/dev/null"
 ## git
 alias gclo='git clone'
 alias gundo='git reset --soft HEAD~1' # will undo the last commit
+alias clonedesk='cd ~/Desktop;git clone $(pbpaste)'
 
 ## homebrew
 alias bi='brew install'
