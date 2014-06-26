@@ -48,6 +48,7 @@ nnoremap W ea
 
 " easy spelling suggestion accepting and toggling spelling on/off
 nnoremap Z [s1z=`]
+:imap zz <Esc>[s1z=`]a
 nnoremap <Leader>s :setlocal spell! spelllang=en_us<CR>
 
 " word count
@@ -55,6 +56,14 @@ nnoremap <Leader>c g<C-G>
 
 " marked.app
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
+
+" formatting for Markdown lists
+" set formatoptions=tcroqln
+" set com=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,b:-
+let g:vim_markdown_folding_disabled=1
+
+" gundo
+:nnoremap <leader>g :GundoToggle<CR>
 
 " current word in system dictionary (copies word to d buffer)
 nnoremap <Leader>d "dyiw :silent !open dict://<C-R>d<Cr>
@@ -89,9 +98,6 @@ map <Leader>a ggVG
 nnoremap + <C-a>
 nnoremap - <C-x>
 
-" commandbar height
-set cmdheight=2
-
 " better searching
 set ignorecase
 set hlsearch
@@ -100,3 +106,17 @@ nmap <silent> <leader>n :silent :nohlsearch<CR>
 
 " recognize .md files as markdown files
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" use UTF-8 encoding
+set encoding=utf8
+set termencoding=utf-8
+set fileencodings=        " don't do any encoding conversion
+
+" setup vim-airline
+set lazyredraw
+set laststatus=2
+let g:airline_theme='lucius'
+
+" setup vim-startify
+let g:startify_custom_header =
+      \ map(split(system('fortune | cowsay'), '\n'), '"   ". v:val') + ['','']
