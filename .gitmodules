@@ -28,3 +28,18 @@
 [submodule "vim/bundle/tabular.vim"]
 	path = vim/bundle/tabular.vim
 	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "vim/bundle/vim-startify"]
+	path = vim/bundle/vim-startify
+	url = https://github.com/mhinz/vim-startify.git
+[submodule "vim/bundle/vim-autocorrect"]
+	path = vim/bundle/vim-autocorrect
+	url = https://github.com/panozzaj/vim-autocorrect.git
+[submodule "vim/bundle/gundo.vim"]
+	path = vim/bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
