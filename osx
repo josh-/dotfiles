@@ -44,6 +44,12 @@ defaults write com.apple.CrashReporter DialogType developer
 # Trackpad, mouse, keyboard, and input                                        #
 ###############################################################################
 
+# Don't automatically switch to a Space with open windows for and application when switching to it 
+defaults write com.apple.dock workspaces-auto-swoosh -boolean NO
+
+# Don’t automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
