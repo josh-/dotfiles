@@ -2,25 +2,51 @@
 export EDITOR='vim'
 
 # autocomplete directories
-c() { cd ~/Dropbox/Development/$1; }
-_c() { _files -W ~/Dropbox/Development -/; }
-compdef _c c
+dev() { cd ~/Dropbox/Development/$1; }
+_dev() { _files -W ~/Dropbox/Development -/; }
+compdef _dev dev
 
-h() { cd ~/$1; }
-_h() { _files -W ~/ -/; }
-compdef _h h
+home() { cd ~/$1; }
+_home() { _files -W ~/ -/; }
+compdef _home home
 
 desk() { cd ~/Desktop/$1; }
 _desk() { _files -W ~/Desktop -/; }
 compdef _desk desk
 
+lib() { cd ~/Library/$1; }
+_lib() { _files -W ~/Library -/; }
+compdef _lib lib
+
+down() { cd ~/Downloads/$1; }
+_down() { _files -W ~/Downloads -/; }
+compdef _down down
+
+engage() { cd ~/Dropbox/Engage/$1; }
+_engage() { _files -W ~/Dropbox/Engage -/; }
+compdef _engage engage
+
+apps() { cd /Applications/$1; }
+_apps() { _files -W /Applications -/; }
+compdef _apps apps
+
+uni() { cd ~/Dropbox/Uni/$1; }
+_uni() { _files -W ~/Dropbox/Uni -/; }
+compdef _uni uni
+
+site() { cd ~/Dropbox/Site/$1; }
+_site() { _files -W ~/Dropbox/Site -/; }
+compdef _site site
+
 # aliases
 
 alias ql="qlmanage -p &>/dev/null"
+alias p="python3"
 
 ## git
 alias gclo='git clone'
 alias gundo='git reset --soft HEAD~1' # will undo the last commit
+alias gadeleted='git rm $(git ls-files --deleted)'
 alias clonedesk='cd ~/Desktop;git clone $(pbpaste)'
 
 ## homebrew
