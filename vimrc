@@ -62,6 +62,9 @@ nnoremap <Leader>c g<C-G>
 " set com=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,b:-
 let g:vim_markdown_folding_disabled=1
 
+" prevent .netrwhist file creation
+let g:netrw_dirhistmax = 0
+
 " gundo
 :nnoremap <leader>g :GundoToggle<CR>
 
