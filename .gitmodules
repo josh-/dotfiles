@@ -16,9 +16,6 @@
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "vim/bundle/writer.vim"]
-	path = vim/bundle/writer.vim
-	url = git://github.com/honza/writer.vim.git
 [submodule "vim/bundle/zencoding-vim"]
 	path = vim/bundle/zencoding-vim
 	url = git://github.com/mattn/zencoding-vim.git
