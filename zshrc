@@ -4,9 +4,6 @@ ZSH=$HOME/.oh-my-zsh
 # load a theme or use "random"
 ZSH_THEME="mnml"
 
-# show completion dots
-COMPLETION_WAITING_DOTS="true"
-
 # disable update check
 DISABLE_AUTO_UPDATE="true"
 
