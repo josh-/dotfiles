@@ -11,7 +11,7 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_UPDATE="true"
 
 # load plugins from ~/.oh-my-zsh/plugins/*
-plugins=(josh nanoc git osx zsh-history-substring-search brew)
+plugins=(josh nanoc git osx zsh-history-substring-search brew z)
 
 source $ZSH/oh-my-zsh.sh
 
