@@ -43,6 +43,9 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 # Developer CrashReport dialog type
 defaults write com.apple.CrashReporter DialogType developer
 
+# Reduce transparency
+defaults write com.apple.universalaccess reduceTransparency -boolean true
+
 ###############################################################################
 # Trackpad, mouse, keyboard, and input                                        #
 ###############################################################################
@@ -175,8 +178,8 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 # Safari & WebKit                                                             #
 ###############################################################################
 
-# Set Safari’s home page to `about:blank` for faster loading
-defaults write com.apple.Safari HomePage -string "about:blank"
+# Set Safari’s home page to nothing
+defaults write com.apple.Safari HomePage -string ""
 
 # Hide Safari’s bookmarks bar by default
 defaults write com.apple.Safari ShowFavoritesBar -bool false
