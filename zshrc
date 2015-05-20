@@ -16,4 +16,4 @@ plugins=(josh nanoc git osx zsh-history-substring-search brew z)
 source $ZSH/oh-my-zsh.sh
 
 # PATH
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
