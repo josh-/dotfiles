@@ -43,3 +43,6 @@
 [submodule "/Users/josh/.dotfiles/vim/bundle/nerdcommenter"]
 	path = /Users/josh/.dotfiles/vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	url = git://github.com/zsh-users/zsh-syntax-highlighting.git

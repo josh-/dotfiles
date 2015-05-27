@@ -11,7 +11,7 @@ DISABLE_AUTO_UPDATE="true"
 #set -o vi
 
 # load plugins from ~/.oh-my-zsh/plugins/*
-plugins=(josh nanoc git osx zsh-history-substring-search brew z)
+plugins=(josh nanoc git osx zsh-history-substring-search brew z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
