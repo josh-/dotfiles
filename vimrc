@@ -110,6 +110,9 @@ nmap <silent> <leader>n :silent :nohlsearch<CR>
 " recognize .md files as markdown files
 au BufRead,BufNewFile *.md set filetype=markdown
 
+" two spaces for tabs instead of 4 for ruby
+autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 tabstop=2
+
 " use UTF-8 encoding
 set encoding=utf8
 set termencoding=utf-8
