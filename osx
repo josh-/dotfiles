@@ -29,6 +29,9 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
+# Disable window animation
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false 
+
 # Menu bar: hide the Time Machine and User icons
 defaults write ~/Library/Preferences/ByHost/com.apple.systemuiserver.* dontAutoLoad -array \
   "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
