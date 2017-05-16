@@ -16,4 +16,5 @@ plugins=(josh nanoc git osx zsh-history-substring-search brew z zsh-syntax-highl
 source $ZSH/oh-my-zsh.sh
 
 # PATH
-PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+TEXPATH=/Library/TeX/texbin
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$TEXPATH
