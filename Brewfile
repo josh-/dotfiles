@@ -1,19 +1,22 @@
-# Update Homebrew
-update
-
-# Upgrade any already-installed formulae
-upgrade
-
-# Install formulae
-install class-dump
-install git
-install macvim
-install zsh
-install node
-install tig
-install webkit2png
-install nmap
-install sloccount
-
-# Remove outdated versions from the cellar
-cleanup
+brew 'contacts'
+brew 'node'
+brew 'youtube-dl'
+brew 'jq'
+brew 'cowsay'
+brew 'doxygen'
+brew 'gcc'
+brew 'gist'
+brew 'heroku'
+brew 'keybase'
+brew 'mas'
+brew 'mpv'
+brew 'pdf2htmlex'
+brew 'postgresql94'
+brew 'python'
+brew 'python3'
+brew 'ruby'
+brew 'x264'
+brew 'xmlstarlet'
+brew 'xz'
+brew 'watchman'
+brew 'openssl'
