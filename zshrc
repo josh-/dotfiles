@@ -5,7 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="mnml"
 
 # disable update check
-DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE=true
+DISABLE_UPDATE_PROMPT=true
 
 # load plugins from ~/.oh-my-zsh/plugins/*
 plugins=(josh nanoc git osx zsh-history-substring-search brew z zsh-syntax-highlighting)
