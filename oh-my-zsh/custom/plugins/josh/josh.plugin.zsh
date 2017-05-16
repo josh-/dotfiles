@@ -43,6 +43,11 @@ compdef _site site
 alias ql="qlmanage -p &>/dev/null"
 alias p="python3"
 
+## compress pdf with Ghostscript from https://blog.omgmog.net/post/compressing-pdf-from-your-mac-or-linux-terminal-with-ghostscript/
+compresspdf () {
+    gs -sDEVICE=pdfwrite -dNOPAUSE -dQUIET -dBATCH -dPDFSETTINGS=/${3:-"screen"} -dCompatibilityLevel=1.4 -sOutputFile=$2 $1
+}
+
 ## git
 alias gclo='git clone'
 alias gundo='git reset --soft HEAD~1' # will undo the last commit
