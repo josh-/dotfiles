@@ -57,6 +57,7 @@ alias clonedesk='cd ~/Desktop;git clone $(pbpaste)'
 ## homebrew
 alias bi='brew install'
 alias bu='brew update'
+function bz () { brew upgrade $@ && brew cleanup $@ }
 
 ## vim
 alias v='vim'
