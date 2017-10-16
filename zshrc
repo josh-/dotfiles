@@ -19,4 +19,4 @@ bindkey "\033[1;2C" dirhistory_zle_dirhistory_future
 
 # PATH
 TEXPATH=/Library/TeX/texbin
-PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$TEXPATH
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$TEXPATH:"$HOME/.fastlane/bin:$PATH"
