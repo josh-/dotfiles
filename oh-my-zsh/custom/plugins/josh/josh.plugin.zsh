@@ -62,6 +62,9 @@ function bz () { brew upgrade $@ && brew cleanup $@ }
 ## vim
 alias v='vim'
 
+## docker
+function docker-br () { docker build -t $@ . && docker run -it --rm $@ }
+
 # https://twitter.com/olebegemann/status/918190328611471360
 alias radar='{ sw_vers; echo "---"; xcodebuild -version; } | pbcopy'
 
