@@ -62,6 +62,9 @@ function bz () { brew upgrade $@ && brew cleanup $@ }
 ## vim
 alias v='vim'
 
+# https://twitter.com/olebegemann/status/918190328611471360
+alias radar='{ sw_vers; echo "---"; xcodebuild -version; } | pbcopy'
+
 ## filesystem stuff
 alias cdir='pwd | pbcopy' #copy current directory to clipboard
 
