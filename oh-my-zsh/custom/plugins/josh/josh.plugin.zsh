@@ -42,6 +42,7 @@ compdef _site site
 
 alias ql="qlmanage -p &>/dev/null"
 alias p="python3"
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 ## compress pdf with Ghostscript from https://blog.omgmog.net/post/compressing-pdf-from-your-mac-or-linux-terminal-with-ghostscript/
 compresspdf () {
