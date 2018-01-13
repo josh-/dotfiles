@@ -43,3 +43,6 @@
 [submodule "oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "vim/bundle/vim-airline-themes"]
+	path = vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
