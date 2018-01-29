@@ -184,6 +184,9 @@ defaults write com.apple.dock showhidden -bool true
 defaults write com.apple.dock wvous-br-corner -int 10
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+# Add iOS Simulator to Launchpad
+sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
+
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
