@@ -32,11 +32,6 @@ defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 # Disable window animation
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
-# Menu bar: hide the Time Machine and User icons
-defaults write ~/Library/Preferences/ByHost/com.apple.systemuiserver.* dontAutoLoad -array \
-  "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-  "/System/Library/CoreServices/Menu Extras/User.menu" \
-
 # Run Time Machine backups on battery power
 defaults write /Library/Preferences/com.apple.TimeMachine RequiresACPower 0
 
