@@ -282,10 +282,7 @@ defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 ###############################################################################
-# Kill affected applications                                                  #
+# Finished                                                                    #
 ###############################################################################
 
-for app in Finder Dock Mail Safari iTunes SystemUIServer "QuickTime Player" MacVim; do
-	killall "$app" > /dev/null 2>&1
-done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
