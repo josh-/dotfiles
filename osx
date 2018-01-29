@@ -158,7 +158,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 chflags nohidden ~/Library
 
 ###############################################################################
-# Dock & hot corners                                                          #
+# Dock, Launchpad & hot corners                                               #
 ###############################################################################
 
 # Set the icon size of Dock items to 30 pixels
