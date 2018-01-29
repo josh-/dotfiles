@@ -5,6 +5,7 @@ desc "install the dot files into user's home directory"
 task :install do
   install_oh_my_zsh
   switch_to_zsh
+  run_macos
   replace_all = false
   files = Dir['*'] - %w[Rakefile README.rdoc LICENSE macos Brewfile oh-my-zsh config]
   files << "oh-my-zsh/custom/plugins/josh"
@@ -89,5 +90,17 @@ def install_oh_my_zsh
     else
       puts "skipping oh-my-zsh, you will need to change ~/.zshrc"
     end
+  end
+end
+
+def run_macos
+  print "run macos setup script? [ynq] "
+  case $stdin.gets.chomp
+  when 'y'
+    system %Q{./macos}
+  when 'q'
+    exit
+  else
+    puts "skipping macos script"
   end
 end
