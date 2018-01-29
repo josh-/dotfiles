@@ -30,7 +30,7 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Disable window animation
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false 
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
 # Menu bar: hide the Time Machine and User icons
 defaults write ~/Library/Preferences/ByHost/com.apple.systemuiserver.* dontAutoLoad -array \
@@ -53,7 +53,7 @@ defaults write com.apple.universalaccess reduceTransparency -boolean true
 # Trackpad, mouse, keyboard, and input                                        #
 ###############################################################################
 
-# Don't automatically switch to a Space with open windows for and application when switching to it 
+# Don't automatically switch to a Space with open windows for and application when switching to it
 defaults write com.apple.dock workspaces-auto-swoosh -boolean NO
 
 # Don’t automatically rearrange Spaces based on most recent use
