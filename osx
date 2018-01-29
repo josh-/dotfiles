@@ -96,6 +96,10 @@ defaults write com.apple.screensaver askForPasswordDelay -int 900
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
+# Set home as the default location for new Finder windows
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+
 # Finder: show hidden files by default
 defaults write com.apple.Finder AppleShowAllFiles -bool true
 
