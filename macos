@@ -306,6 +306,35 @@ defaults write com.tapbots.TweetbotMac statusViewImageType -int 1
 defaults write com.tapbots.TweetbotMac streamingPinToTopEnabled -int 0
 
 ###############################################################################
+# SourceTree                                                                  #
+###############################################################################
+
+# Use Compact View in the Repository Browser
+defaults write com.torusknot.SourceTreeNotMAS bookmarksStyleSize -int 1
+
+# Show whitespace in the diff view
+defaults write com.torusknot.SourceTreeNotMAS diffIgnoreWhitespace -int 0
+
+# Set double-click to stage file instead of opening in editor
+defaults write com.torusknot.SourceTreeNotMAS fileDoubleClickBehaviour -int 1
+
+# Set file filter status to sort by path alphabetically
+defaults write com.torusknot.SourceTreeNotMAS fileStatusFilterMode -int 1
+
+# Set staging view to split view
+defaults write com.torusknot.SourceTreeNotMAS fileStatusStagingViewMode -int 1
+
+# Fetch and prune
+defaults write com.torusknot.SourceTreeNotMAS gitFetchPrune -int 1
+
+# Suppress file amend warning
+defaults write com.torusknot.SourceTreeNotMAS gitSuppressWarnOnAmend -int 1
+
+# Disable tips
+defaults write com.torusknot.SourceTreeNotMAS showStagingTip -bool false
+defaults write com.torusknot.SourceTreeNotMAS showToolbarTip -bool false
+
+###############################################################################
 # Finished                                                                    #
 ###############################################################################
 
