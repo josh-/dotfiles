@@ -75,7 +75,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 # Trackpad: set high tracking speed
 defaults write NSGlobalDomain com.apple.mouse.scaling 3.0
 
-# Trackpad: Disable force click 
+# Trackpad: Disable force click
 defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
 
 # Enable full keyboard access for all controls
