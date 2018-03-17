@@ -15,4 +15,5 @@ source $ZSH/oh-my-zsh.sh
 
 # PATH
 TEXPATH=/Library/TeX/texbin
-PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$TEXPATH:"$HOME/.fastlane/bin:$PATH"
+FASTLANEPATH="$HOME/.fastlane/bin"
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$TEXPATH:$FASTLANEPATH:$PATH
