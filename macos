@@ -252,6 +252,13 @@ defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen 1
 
 ###############################################################################
+# Terminal                                                                    #
+###############################################################################
+
+# Disable automatically marking prompt lines
+defaults write com.apple.Terminal AutoMarkPromptLines -int 0
+
+###############################################################################
 # Messages                                                                    #
 ###############################################################################
 
