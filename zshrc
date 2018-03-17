@@ -1,7 +1,7 @@
-# path to oh-my-zsh configuration.
+# path to oh-my-zsh configuration
 ZSH=$HOME/.oh-my-zsh
 
-# load a theme or use "random"
+# load theme
 ZSH_THEME="mnml"
 
 # disable update check
