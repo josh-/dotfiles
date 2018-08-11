@@ -28,9 +28,6 @@ bind left:ctrl;alt  nudge -6% +0
 bind up:ctrl;alt    nudge +0   -6%
 bind down:ctrl;alt  nudge +0   +6%
 
-# Window Hints
-bind esc:ctrl  hint
-
 # App Switcher
 bind tab:alt   switch
 
