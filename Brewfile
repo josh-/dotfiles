@@ -1,3 +1,7 @@
+tap 'homebrew/cask-fonts'
+tap 'josh-/qlscpt'
+tap 'nonchalant/appicon'
+
 brew 'appicon'
 brew 'awscli'
 brew 'cowsay'
