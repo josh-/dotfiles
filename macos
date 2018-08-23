@@ -277,6 +277,13 @@ defaults write com.apple.Terminal "Default Window Settings" -string "Homebrew"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
 
 ###############################################################################
+# Calendar                                                                    #
+###############################################################################
+
+# Show sidebar
+defaults write com.apple.iCal CalendarSidebarShown -bool true
+
+###############################################################################
 # Messages                                                                    #
 ###############################################################################
 
