@@ -329,16 +329,13 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 ###############################################################################
 
 # Open URLs in Background
-defaults write com.tapbots.TweetbotMac openURLInBackground -int 1
+defaults write com.tapbots.Tweetbot3Mac openURLInBackground -int 1
 
 # Only play notification sounds
-defaults write com.tapbots.TweetbotMac soundType -int 1
+defaults write com.tapbots.Tweetbot3Mac soundType -int 1
 
 # Snow small image thumbnails
-defaults write com.tapbots.TweetbotMac statusViewImageType -int 1
-
-# Disable pinning-to-top when streaming
-defaults write com.tapbots.TweetbotMac streamingPinToTopEnabled -int 0
+defaults write com.tapbots.Tweetbot3Mac statusViewImageType -int 1
 
 ###############################################################################
 # SourceTree                                                                  #
