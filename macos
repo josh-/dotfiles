@@ -367,6 +367,21 @@ defaults write com.torusknot.SourceTreeNotMAS showStagingTip -bool false
 defaults write com.torusknot.SourceTreeNotMAS showToolbarTip -bool false
 
 ###############################################################################
+# LaunchBar                                                                   #
+###############################################################################
+
+# Set calculator hot key to Cmd-Shift-=
+defaults write at.obdev.LaunchBar CalculatorHotKey -string "768@24"
+defaults write at.obdev.LaunchBar CalculatorHotKeyEnabled -bool true
+
+# Clipboard history
+defaults write at.obdev.LaunchBar ClipboardHistoryCapacity -int 40
+defaults write at.obdev.LaunchBar ClipboardHistoryPreferPlainText -bool true
+
+# Enable instant snd with Shift-Shift
+defaults write at.obdev.LaunchBar ModifierTapInstantSend -int 24
+
+###############################################################################
 # Finished                                                                    #
 ###############################################################################
 
