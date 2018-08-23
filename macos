@@ -69,8 +69,9 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFi
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFingerPinchGesture -int 2
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerTapGesture -int 2
 
-# Trackpad: set high tracking speed
+# Trackpad & Mouse: High tracking speed
 defaults write NSGlobalDomain com.apple.mouse.scaling 3.0
+defaults write NSGlobalDomain com.apple.trackpad.scaling 3.0
 
 # Trackpad: Disable force click
 defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
