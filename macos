@@ -242,6 +242,9 @@ defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 # Don’t allow websites to ask for permission to send push notifications
 defaults write com.apple.Safari CanPromptForPushNotifications -bool false
 
+# Show overlay status bar
+defaults write com.apple.Safari ShowOverlayStatusBar -bool true
+
 ###############################################################################
 # iTunes, Mail, and Disk Utility                                              #
 ###############################################################################
