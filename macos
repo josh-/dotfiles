@@ -166,6 +166,13 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
+# Don't show drives on Desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+
+# Collapse tags in sidebar
+defaults write com.apple.finder SidebarTagsSctionDisclosedState -int 0
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
