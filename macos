@@ -88,6 +88,19 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Follow the keyboard focus while zoomed in
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
+# Enable the "Do Not Disturb On/Off" keyboard shortcut
+defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 175 "{
+            enabled = 0;
+            value =             {
+                parameters =                 (
+                    65535,
+                    53,
+                    262144
+                );
+                type = standard;
+            };
+        }"
+
 ###############################################################################
 # Screen Saver                                                                #
 ###############################################################################
