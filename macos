@@ -32,9 +32,6 @@ defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 # Disable window animation
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
-# Run Time Machine backups on battery power
-defaults write /Library/Preferences/com.apple.TimeMachine RequiresACPower 0
-
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
