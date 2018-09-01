@@ -216,6 +216,10 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 # Set Safari’s home page to nothing
 defaults write com.apple.Safari HomePage -string ""
 
+# Restore last session at launch
+defaults write com.apple.Safari AlwaysRestoreSessionAtLaunch -bool true
+defaults write com.apple.Safari OpenPrivateWindowWhenNotRestoringSessionAtLaunch -bool false
+
 # Hide Safari’s bookmarks bar by default
 defaults write com.apple.Safari ShowFavoritesBar -bool false
 
