@@ -4,6 +4,7 @@ tap 'nonchalant/appicon'
 
 brew 'appicon'
 brew 'awscli'
+brew 'carthage'
 brew 'cowsay'
 brew 'ffmpeg'
 brew 'heroku'
