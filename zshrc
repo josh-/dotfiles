@@ -9,7 +9,7 @@ DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
 
 # load plugins from ~/.oh-my-zsh/plugins/*
-plugins=(josh nanoc git osx zsh-history-substring-search brew z zsh-syntax-highlighting)
+plugins=(josh nanoc git osx zsh-history-substring-search brew z zsh-syntax-highlighting vscode)
 
 source $ZSH/oh-my-zsh.sh
 
