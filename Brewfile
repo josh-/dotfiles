@@ -21,7 +21,6 @@ brew 'xmlstarlet'
 brew 'youtube-dl'
 
 cask 'dotnet-sdk'
-cask 'dotnet'
 cask 'font-fira-code'
 cask 'font-hack'
 cask 'font-source-code-pro'
