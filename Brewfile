@@ -1,6 +1,7 @@
 tap 'homebrew/cask-fonts'
 tap 'josh-/qlscpt'
 tap 'nonchalant/appicon'
+tap 'heroku/brew'
 
 brew 'appicon'
 brew 'awscli'
