@@ -58,6 +58,9 @@ alias youtube-mp3='youtube-dl -x --audio-format mp3'
 # https://twitter.com/olebegemann/status/918190328611471360
 alias radar='{ sw_vers; echo "---"; xcodebuild -version; } | pbcopy'
 
+# codesigning
+function ent () { codesign -d -vvv --entitlements :- $@ }
+
 ## filesystem stuff
 alias cdir='pwd | pbcopy' #copy current directory to clipboard
 
