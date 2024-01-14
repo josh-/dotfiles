@@ -72,3 +72,6 @@ lb () {
         open "x-launchbar:select?file=$(pwd)"
     fi
 }
+
+# encoding
+function makemp4 () { ffmpeg -i $1 -c:v libx264 -preset medium -crf 23 -c:a aac -b:a 192k $2 }
