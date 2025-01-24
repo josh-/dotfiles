@@ -1,51 +1,9 @@
-[submodule "vim/bundle/closetag.vim"]
-	path = vim/bundle/closetag.vim
-	url = git://github.com/vim-scripts/closetag.vim.git
-[submodule "vim/bundle/delimitMate"]
-	path = vim/bundle/delimitMate
-	url = git://github.com/Raimondi/delimitMate.git
-[submodule "vim/bundle/supertab"]
-	path = vim/bundle/supertab
-	url = git://github.com/ervandew/supertab.git
-[submodule "vim/bundle/vim-fugitive"]
-	path = vim/bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/vim-surround"]
-	path = vim/bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
-[submodule "vim/bundle/zencoding-vim"]
-	path = vim/bundle/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/tabular.vim"]
-	path = vim/bundle/tabular.vim
-	url = git://github.com/godlygeek/tabular.git
-[submodule "vim/bundle/vim-airline"]
-	path = vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline.git
-[submodule "vim/bundle/vim-startify"]
-	path = vim/bundle/vim-startify
-	url = https://github.com/mhinz/vim-startify.git
-[submodule "vim/bundle/vim-autocorrect"]
-	path = vim/bundle/vim-autocorrect
-	url = https://github.com/panozzaj/vim-autocorrect.git
-[submodule "vim/bundle/gundo.vim"]
-	path = vim/bundle/gundo.vim
-	url = https://github.com/sjl/gundo.vim.git
-[submodule "vim/bundle/vim-markdown"]
-	path = vim/bundle/vim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "/Users/josh/.dotfiles/vim/bundle/nerdcommenter"]
-	path = /Users/josh/.dotfiles/vim/bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "vim/bundle/vim-airline-themes"]
-	path = vim/bundle/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes.git
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "oh-my-zsh/custom/plugins/zsh-autosuggestions"]
 	path = oh-my-zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "oh-my-zsh/custom/plugins/zsh-history-substring-search"]
+	path = oh-my-zsh/custom/plugins/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search.git

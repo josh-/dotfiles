@@ -9,9 +9,10 @@ task :install do
   replace_all = false
   files = Dir['*'] - %w[Rakefile README.rdoc LICENSE macos Brewfile oh-my-zsh config]
   files << "oh-my-zsh/custom/plugins/josh"
+  files << "oh-my-zsh/custom/plugins/zsh-autosuggestions"
+  files << "oh-my-zsh/custom/plugins/zsh-history-substring-search"
   files << "oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
   files << "oh-my-zsh/custom/mnml.zsh-theme"
-  files << "config/nvim/init.vim"
   files.each do |file|
     system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}"))

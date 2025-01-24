@@ -5,41 +5,17 @@
 # General UI/UX                                                               #
 ###############################################################################
 
-# Menu bar: show battery percentage
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-
-# Set sidebar icon size to Small
-defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
-
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 # Expand print panel by default
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 
-# Save to disk (not to iCloud) by default
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-
-# Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
-
 # Disable the Time Machine new disk requests dialog
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
-# Menu bar: disable transparency
-defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
-
-# Disable window animation
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
-
-# Check for software updates daily, not just once per week
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
-
 # Developer CrashReport dialog type
 defaults write com.apple.CrashReporter DialogType developer
-
-# Reduce transparency
-defaults write com.apple.universalaccess reduceTransparency -boolean true
 
 ###############################################################################
 # Trackpad, mouse, keyboard, and input                                        #
@@ -226,14 +202,8 @@ defaults write com.apple.Safari OpenPrivateWindowWhenNotRestoringSessionAtLaunch
 # Hide Safari’s bookmarks bar by default
 defaults write com.apple.Safari ShowFavoritesBar -bool false
 
-# Disable Safari’s thumbnail cache for History and Top Sites
-defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
-
 # Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-
-# Remove useless icons from Safari’s bookmarks bar
-defaults write com.apple.Safari ProxiesInBookmarksBar "()"
 
 # Enable the Develop menu and the Web Inspector in Safari
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
@@ -251,26 +221,6 @@ defaults write com.apple.Safari CanPromptForPushNotifications -bool false
 
 # Show overlay status bar
 defaults write com.apple.Safari ShowOverlayStatusBar -bool true
-
-###############################################################################
-# iTunes, Mail, and Disk Utility                                              #
-###############################################################################
-
-# Disable radio stations in iTunes
-defaults write com.apple.iTunes disableRadio -bool true
-
-# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
-
-# Enable the debug menu in Disk Utility
-defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
-
-###############################################################################
-# Quicktime X                                                                 #
-###############################################################################
-
-# Enable autoplay
-defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen 1
 
 ###############################################################################
 # Terminal                                                                    #
@@ -291,87 +241,11 @@ defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
 defaults write com.apple.iCal CalendarSidebarShown -bool true
 
 ###############################################################################
-# Messages                                                                    #
-###############################################################################
-
-# Disable emoji text substitution
-defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
-
-###############################################################################
-# Activity Monitor                                                            #
-###############################################################################
-
-# Show the main window when launching Activity Monitor
-defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
-
-# Show all processes in Activity Monitor
-defaults write com.apple.ActivityMonitor ShowCategory -int 0
-
-###############################################################################
-# MacVim                                                                      #
-###############################################################################
-
-# Always show hidden files
-defaults write org.vim.MacVim AppleShowAllFiles -bool true
-
-###############################################################################
 # TextEdit                                                                    #
 ###############################################################################
 
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
-# Open and save files as UTF-8 in TextEdit
-defaults write com.apple.TextEdit PlainTextEncoding -int 4
-defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
-
-###############################################################################
-# Photos                                                                      #
-###############################################################################
-
-# Prevent Photos from opening automatically when devices are plugged in
-defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-
-###############################################################################
-# TweetBot                                                                  #
-###############################################################################
-
-# Open URLs in Background
-defaults write com.tapbots.Tweetbot3Mac openURLInBackground -int 1
-
-# Only play notification sounds
-defaults write com.tapbots.Tweetbot3Mac soundType -int 1
-
-# Snow small image thumbnails
-defaults write com.tapbots.Tweetbot3Mac statusViewImageType -int 1
-
-###############################################################################
-# SourceTree                                                                  #
-###############################################################################
-
-# Use Compact View in the Repository Browser
-defaults write com.torusknot.SourceTreeNotMAS bookmarksStyleSize -int 1
-
-# Show whitespace in the diff view
-defaults write com.torusknot.SourceTreeNotMAS diffIgnoreWhitespace -int 0
-
-# Set double-click to stage file instead of opening in editor
-defaults write com.torusknot.SourceTreeNotMAS fileDoubleClickBehaviour -int 1
-
-# Set file filter status to sort by path alphabetically
-defaults write com.torusknot.SourceTreeNotMAS fileStatusFilterMode -int 1
-
-# Set staging view to split view
-defaults write com.torusknot.SourceTreeNotMAS fileStatusStagingViewMode -int 1
-
-# Fetch and prune
-defaults write com.torusknot.SourceTreeNotMAS gitFetchPrune -int 1
-
-# Suppress file amend warning
-defaults write com.torusknot.SourceTreeNotMAS gitSuppressWarnOnAmend -int 1
-
-# Disable tips
-defaults write com.torusknot.SourceTreeNotMAS showStagingTip -bool false
-defaults write com.torusknot.SourceTreeNotMAS showToolbarTip -bool false
 
 ###############################################################################
 # LaunchBar                                                                   #
